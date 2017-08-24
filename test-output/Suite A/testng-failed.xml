@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite A]">
+  <test name="FlipKart Login(failed)">
+    <classes>
+      <class name="com.flipkartHybrid.LoginTest.LoginTest">
+        <methods>
+          <include name="Init"/>
+          <include name="afterTest"/>
+          <include name="login" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- com.flipkartHybrid.LoginTest.LoginTest -->
+    </classes>
+  </test> <!-- FlipKart Login(failed) -->
+  <test name="FlipKart Change Password(failed)">
+    <classes>
+      <class name="com.flipkartHybrid.LoginTest.changePassword">
+        <methods>
+          <include name="Init"/>
+          <include name="changePasswo" invocation-numbers="0 1 2"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.flipkartHybrid.LoginTest.changePassword -->
+    </classes>
+  </test> <!-- FlipKart Change Password(failed) -->
+</suite> <!-- Failed suite [Suite A] -->
