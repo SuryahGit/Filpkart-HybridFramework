@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Command line suite</th></tr><tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">250,705</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.flipkartHybrid.LoginTest.LoginTest</td><td><a href="#m0">login</a></td><td rowspan="1">1503613388296</td><td rowspan="1">122719</td></tr><tr class="failedodd"><td rowspan="1">com.flipkartHybrid.Product.FilterMobileTest</td><td><a href="#m1">login</a></td><td rowspan="1">1503613511021</td><td rowspan="1">75641</td></tr><tr><th colspan="4">Command line test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.flipkartHybrid.LoginTest.LoginTest</td><td><a href="#m2">login</a></td><td rowspan="2">1503613511017</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m3">login</a></td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.flipkartHybrid.LoginTest.LoginTest</td><td><a href="#m4">login</a></td><td rowspan="1">1503613336959</td><td rowspan="1">51337</td></tr></tbody></table><h2>Command line test</h2><h3 id="m0">com.flipkartHybrid.LoginTest.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=Test, ExpectedResult=Success, Password=sdadsa, Runmode=Y, Email=te@kadak.com, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failed - Got an Actual Result as Failure
+	at com.flipkartHybrid.Keywords.executeKeywords(Keywords.java:62)
+	at com.flipkartHybrid.LoginTest.LoginTest.login(LoginTest.java:38)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.flipkartHybrid.Product.FilterMobileTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PriceFilter=Rs. 10000 - Rs. 14999, MobileBrand=Samsung_xPath, Runmode=Y, Browser=Mozilla}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;HOUSINGMAN&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:           0x4bd56f - &lt;no info&gt;
+   1:           0x4bdcc9 - &lt;no info&gt;
+   2:           0x449980 - &lt;no info&gt;
+   3:           0x4207bc - &lt;no info&gt;
+   4:           0x405e47 - &lt;no info&gt;
+   5:           0x6db3d9 - &lt;no info&gt;
+   6:           0x417847 - &lt;no info&gt;
+   7:           0x6d56d3 - &lt;no info&gt;
+   8:     0x7ffa709913d2 - BaseThreadInitThunk
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
+	at com.flipkartHybrid.GenericKeywords.openBrowser(GenericKeywords.java:49)
+	at com.flipkartHybrid.Keywords.executeKeywords(Keywords.java:38)
+	at com.flipkartHybrid.Product.FilterMobileTest.login(FilterMobileTest.java:38)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.flipkartHybrid.LoginTest.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=asassas, ExpectedResult=, Password=, Runmode=N, Email=dad@lda.com, Browser=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping the test as runmode is N
+	at com.flipkartHybrid.LoginTest.LoginTest.login(LoginTest.java:34)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.flipkartHybrid.LoginTest.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=suryah2008, ExpectedResult=, Password=, Runmode=N, Email=princesuryah@gmail.com, Browser=Chrome}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping the test as runmode is N
+	at com.flipkartHybrid.LoginTest.LoginTest.login(LoginTest.java:34)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.flipkartHybrid.LoginTest.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Username=Hi suryah!, ExpectedResult=Success, Password=70307134506, Runmode=Y, Email=floret.classifiedads5@gmail.com, Browser=Mozilla}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

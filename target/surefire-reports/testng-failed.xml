@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.flipkartHybrid.LoginTest.LoginTest">
+        <methods>
+          <include name="Init"/>
+          <include name="afterTest"/>
+          <include name="login" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- com.flipkartHybrid.LoginTest.LoginTest -->
+      <class name="com.flipkartHybrid.Product.FilterMobileTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="Init"/>
+        </methods>
+      </class> <!-- com.flipkartHybrid.Product.FilterMobileTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
