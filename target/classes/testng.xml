@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="My Sample Suite">
-	<suite-files>
-		<suite-file path="./src/test/resources/SuiteA.xml"></suite-file>
-		<suite-file path="./src/test/resources/SuiteB.xml"></suite-file>
-		<suite-file path="./SuiteC.xml"></suite-file>
-	</suite-files>
-</suite>
